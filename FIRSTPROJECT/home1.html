@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send SMS</title>
+    <!-- Include your CSS file -->
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <h1>My First API testing with an Application rather than using Postman</h1><br>
+    <h2>MESSAGE SENDING WITH INTEGRATION OF TIARA API</h2>
+    <form id="smsForm" onsubmit="event.preventDefault(); sendSMS();">
+        <fieldset>
+            <legend>Send SMS</legend>
+            <div>
+                <label for="toMessage">To:</label>
+                <input type="text" id="toMessage" name="toMessage">
+            </div>
+            <div>
+                <label for="messageContent">Message:</label>
+                <textarea id="messageContent" name="messageContent"></textarea>
+            </div>
+            <div>
+                <label for="fromMessage">From:</label>
+                <input type="text" id="fromMessage" name="fromMessage">
+            </div>
+            <button type="submit">Send</button>
+        </fieldset>
+    </form>
+     <!--<script>
+        function checkMessage() {
+          var txtCheck = document.form1;
+            if(txtCheck.textarea.value == "")  {
+              alert("Please enter Message  in the textarea");
+              txtCheck.textarea.focus();
+              return false;
+            }
+        }
+    </script>-->
+
+    <!-- Include your JavaScript file -->
+    <script src="file2.js"></script>
+</body>
+</html>

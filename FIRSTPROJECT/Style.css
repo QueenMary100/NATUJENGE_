@@ -1,0 +1,46 @@
+label{
+    padding-right: 40px;
+    padding-bottom: 20px;
+    font-weight: bolder;
+}
+legend{
+    text-align: center;
+    background-color: black;
+    color: whitesmoke;
+}
+body{
+    margin: 20px;
+    background-color: blue;
+}
+input{
+    padding: 10px;
+    columns: 30;
+    background-color: transparent;
+    font-size: larger;
+    font-weight: bold;
+}
+select{
+    padding: 10px;
+    padding-right: 70px;
+    background-color: transparent;
+}
+option{
+    font-weight: bold;
+    background-color: goldenrod;
+}
+button{
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    
+}
+button:hover{
+    cursor: pointer;
+}
+form{
+    width: 60%;
+}
+fieldset{
+    border-color: goldenrod;
+}

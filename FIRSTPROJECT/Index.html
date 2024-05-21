@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sending messages from form by use of API Fetch or JQuery</title>
+    <link rel="stylesheet" href="Style.css">
+    
+</head>
+<body>
+        
+    <form  name="smsForm" id="smsForm" method="post" onsubmit="event.preventDefault();">
+        <fieldset>
+            <legend>SMS SENDING WITH INTEGRATION OF TIARA  API</legend>
+            
+            <label for="fromMessage" >From :</label><br>
+            <select name="fromMessage" id="fromMessage" required>
+            <option value="TIARA">CONNECT</option>
+            <option value="TIARACONECT">TIARACONECT</option>
+            </select><br><br>
+
+            <label for="toMessage">To :</label><br>
+            <input type="tel" id="toMessage" name="toMessage" pattern="\+254[0-9]{9}"
+            placeholder="+254781312072" required ><br><br>        
+    
+            <label for="MessageContent" >Message :</label><br>
+            <textarea name="MessageContent" id="MessageContent" cols="30" rows="10" placeholder="Test SMS" required >
+            </textarea><br><br>
+
+         <button type="button" id="submitButton">Submit</button><br><br>
+        </fieldset>
+    </form> 
+    <script src="script.js"></script>
+    
+</body>
+</html>
