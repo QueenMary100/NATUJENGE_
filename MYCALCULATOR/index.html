@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Calculator</title>
+    <style>
+        body{
+            text-align: center;
+            margin: auto;
+            
+        }
+        h2{
+            padding: 8px 0px;
+            background-color: aqua;
+            text-align: center;
+        }
+        input{
+            padding: 40px 40px;            
+        }
+        .form2{
+        display: flex;       
+        margin: auto;
+        text-align: center;
+        }    
+        div{
+            margin: 8px;
+        }
+        #cls{
+            background-color: red;
+            color: gold;
+            padding-left: 30px;
+            padding-right: 30px;           
+        }
+        input{
+            background-color: rgb(16,16,16);
+            color: white;
+            font-size: large;
+            border-color: gold;
+        }
+        
+        #display{
+            background-color: aqua;
+            color: white;
+            font-size: 20px;
+            margin-left: 0px;
+            margin-left: 0px;
+            border-radius: 30px;            
+        }        
+        .myform{
+            text-align: center;
+            background-color: blueviolet;
+            width: 450px;margin-left: 30%;
+           border-radius: 20px solid blue;
+        }
+    </style>
+    
+</head>
+<body >
+   <div class="myform">
+        <div class="myTitle">
+            <h2> A SIMPLE JS CALCULATOR :BY MARY_SYOKAU</h2>
+        </div>
+        <div class="form2" style="border-radius: 12px solid gold;">
+            <form action="" method="post" name="form1">
+                <div class="row0" style="padding-bottom: 0px;">
+                    <input type="text"  name="result" id="display">
+                </div>
+                <div class="row1">
+                    <input type="button" value="1" onclick="form1.result.value += '1' ">
+                    <input type="button" value="2" onclick="form1.result.value += '2' ">
+                    <input type="button" value="3" onclick="form1.result.value += '3' ">
+                    <input type="button" value="+" onclick="form1.result.value += '+' ">
+                </div>
+                <div class="row2">
+                    <input type="button" value="4" onclick="form1.result.value += '4' ">
+                    <input type="button" value="5" onclick="form1.result.value += '5' ">
+                    <input type="button" value="6" onclick="form1.result.value += '6' ">
+                    <input type="button" value="-" onclick="form1.result.value += '-' ">
+                </div>
+                <div class="row3">
+                    <input type="button" value="7" onclick="form1.result.value += '7' ">
+                    <input type="button" value="8" onclick="form1.result.value += '8' ">
+                    <input type="button" value="9" onclick="form1.result.value += '9' ">
+                    <input type="button" value="*" onclick="form1.result.value += '*' ">
+                </div>        
+                <div class="row4">
+                    <input type="button" value="0" onclick="form1.result.value += '0' ">
+                    <input type="button" value="/" onclick="form1.result.value += '/' ">
+                    <input type="button" value="clear" id="cls" onclick="form1.result.value = ' ' ">  
+                    <input type="button" value="=" onclick="form1.result.value = eval(form1.result.value) ">
+                                  
+                </div>
+            </form>
+        </div>
+    </div> 
+</body>
+</html>
